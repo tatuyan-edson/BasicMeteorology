@@ -1,0 +1,136 @@
+\documentclass{jsarticle}
+\oddsidemargin=-0.8cm
+\topmargin=-2cm
+\baselineskip=13pt
+\textheight=55\baselineskip
+\marginparsep=0.5in
+\marginparwidth=0.5in
+\textwidth=52zw
+\usepackage{ascmac}
+\usepackage{url}
+\usepackage[dvips]{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{bm}
+\usepackage{enumerate}
+\usepackage{listings}
+\usepackage{fancybox}
+\usepackage{framed}
+\usepackage{subfigure}
+\usepackage{ccaption}
+\usepackage{color}
+\makeatletter
+\lstset{% 
+language={C}, 
+frame=trbl,% 
+basicstyle={\small},% 
+identifierstyle={\small},% 
+commentstyle={\small\ttfamily},% 
+keywordstyle={\small\bfseries},% 
+ndkeywordstyle={\small},% 
+stringstyle={\small\ttfamily}, 
+tabsize=2,
+breaklines=true, 
+frame=none,
+columns=[l]{fullflexible},% 
+numbers=left,% 
+xrightmargin=0zw,% 
+xleftmargin=3zw,% 
+numberstyle={\scriptsize},% 
+stepnumber=1, 
+numbersep=1zw,% 
+backgroundcolor={\color[gray]{.90}},
+} 
+\makeatother
+
+\newenvironment{problems}
+{
+  \renewcommand\labelenumi{\doublebox{\arabic{enumi}}}
+  \begin{enumerate}
+}{
+  \end{enumerate}
+  \renewcommand\labelenumi{\arabic{enumi}.}
+}
+
+\pagestyle{empty}	
+
+\begin{document}
+\title{基礎気象学講義 復習問題} % ここは毎回同じ
+\author{第2回} %authorの代わりに第何回かを入れる
+\date{放射} %内容を記載する
+\maketitle
+
+\section{問題}
+
+    \begin{problems}
+    \item 次の文章を読んで、後の問いに答えなさい。
+        \begin{screen}
+        教科書P.14の図2.6におけるエネルギー配分の数値は現時点での代表的な見積もりの一例である。大気内や地表面における大気放射エネルギー配分は研究者により数\%の評価の差異がある。
+        特に、雲や大気中の微粒子(一般に(A)と呼ばれる)が太陽放射量の吸収に及ぼす効果については不明な点が多い。\\
+        一方で、このような放射エネルギー収支のバランスはあくまで全球について成り立つものであり、$_{(\mathrm{a})}$\underline{地域別あるいは季節別に見ると成り立たない}。
+        下図に人工衛星により観測された大気上端における放射収支とアルベドの緯度分布を示す。
+        \begin{center}
+        \includegraphics[width=0.5\linewidth,keepaspectratio]{AbsorbLat.eps}
+        \end{center}
+
+        図を見ると、南北とも概ね緯度(B)までは吸収量が多く、それより高緯度側では逆になる。この緯度方向の放射収支の不均衡は、放射過程がつねに低緯度側と高緯度側の温度差を拡大するように作用していることを示す。
+        この温度差を縮小するように、大気や海洋の大規模な運動による(C)の輸送が起こる。\\
+        このように放射エネルギーの収支は,大気と海洋の循環運動の平均状態としての気候の形成と深く結びついており、放射エネルギー分布のわずかの変調が気候の変化をもたらしうる。
+        \begin{flushright}
+            (講義テキストを元に作成・図は浅野「大気放射学の基礎」より引用)
+        \end{flushright}
+        \end{screen}
+
+        \begin{enumerate}[(1)]
+        \item 文中の空欄(A)〜(C)に当てはまる語句や数値を答えなさい。
+        \item 下線部(a)のように、地域別あるいは季節別に収支バランスが成り立たない理由を述べなさい。
+        \item アルベドの緯度分布は必ずしも南北対称とは言えない。対称でない理由を述べなさい。\\
+        \end{enumerate}
+
+    \item 地球に入射した太陽光は大気の粒子による吸収や散乱、また大気中あるいは地表の反射を経て地面に入射する。これについて、次の問いに答えなさい。
+        \begin{enumerate}[(1)]
+        \item 反射率は地表面の状態により変わるが、この反射率のことを何と言うか答えなさい。
+        \item 雪面は古びて土が混ざるとよく溶けるとされるが、この理由を説明しなさい。
+        \item 大気中での散乱には、大きくレイリー散乱とミー散乱がある。前者は波長より十分小さい球形粒子の電気双極子による2次放射、後者は波長と同程度の球形粒子による電磁波の散乱である。
+              これらについて教科書を元に、性質を対比して一覧表にまとめなさい。
+        \item 図\ref{Sahara}はサハラ砂漠上空で、人工衛星搭載の分光放射計で測定された地球放射のスペクトルを示している。
+        \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.6\linewidth,keepaspectratio]{Sahara.eps}
+        \caption{地球放射スペクトル。破線は各温度での黒体放射スペクトル。(浅野「大気放射学の基礎」より引用)}\label{Sahara}
+        \end{figure}
+              地球放射に対して吸収量が勝るのはどの波長帯の部分か、図上部に書いてある○○帯(4つ)の中から全て選びなさい。
+        \item 図\ref{Sahara}上部にある「大気の窓」領域とはどのような領域か説明しなさい。
+        \item ある波長帯の赤外放射を吸収し、大気の昇温に寄与するような気体のことを何と言うか答え、その例を5例あげなさい。また、図\ref{Sahara}を元に、最もその寄与が大きい気体は何か答えなさい。
+        \item 人間活動により、前問で答えた気体(寄与最大の気体を除く)が増加し、地表面温度が上昇する環境問題を何と言うか答えなさい。\\
+        \end{enumerate}
+
+    \item 黒体放射について、次の問いに答えなさい。
+        \begin{enumerate}[(1)]
+        \item 黒体とは何か、その定義を答えなさい。
+        \item 黒体放射は等方的とされるが、等方的とはどういうことか説明しなさい。
+        \item 黒体の放射輝度は、絶対温度$T$と波長$\lambda$の関数として、次式のプランク関数により与えられる。
+        \begin{equation}
+        B_{\lambda}(T)=\frac{2hc^2}{\lambda^5\{\exp(hc/k_B\lambda T)-1\}} \label{PlanckFunction}
+        \end{equation}
+        ここで、$c$は光速、$h$はプランク定数$6.62607\times 10^{-34}$Js、$k_B$はボルツマン定数$1.38065\times 10^{-23}$JK$^{-1}$である。
+        これを全波長帯にわたって積分することで、シュテファン・ボルツマンの法則を導きなさい。また、シュテファン・ボルツマン定数を求めなさい。
+        \item ある温度$T$においてプランク関数(\ref{PlanckFunction})の極大値を与える波長$\lambda _\mathrm{m}$を計算することにより、ウィーンの変位則を示しなさい。
+        \end{enumerate}
+\end{problems}
+
+\section{答案}
+\begin{problems}
+% 以下に解答を作成してGit Push。
+\item 
+
+\item 
+
+\item 
+
+\end{problems}
+
+
+\end{document}
+
