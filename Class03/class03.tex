@@ -1,0 +1,128 @@
+\documentclass{jsarticle}
+\oddsidemargin=-0.8cm
+\topmargin=-2cm
+\baselineskip=13pt
+\textheight=55\baselineskip
+\marginparsep=0.5in
+\marginparwidth=0.5in
+\textwidth=52zw
+\usepackage{ascmac}
+\usepackage{url}
+\usepackage[dvips]{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{bm}
+\usepackage{enumerate}
+\usepackage{listings}
+\usepackage{fancybox}
+\usepackage{framed}
+\usepackage{subfigure}
+\usepackage{ccaption}
+\usepackage{color}
+\makeatletter
+\lstset{% 
+language={C}, 
+frame=trbl,% 
+basicstyle={\small},% 
+identifierstyle={\small},% 
+commentstyle={\small\ttfamily},% 
+keywordstyle={\small\bfseries},% 
+ndkeywordstyle={\small},% 
+stringstyle={\small\ttfamily}, 
+tabsize=2,
+breaklines=true, 
+frame=none,
+columns=[l]{fullflexible},% 
+numbers=left,% 
+xrightmargin=0zw,% 
+xleftmargin=3zw,% 
+numberstyle={\scriptsize},% 
+stepnumber=1, 
+numbersep=1zw,% 
+backgroundcolor={\color[gray]{.90}},
+} 
+\makeatother
+
+\newenvironment{problems}
+{
+  \renewcommand\labelenumi{\doublebox{\arabic{enumi}}}
+  \begin{enumerate}
+}{
+  \end{enumerate}
+  \renewcommand\labelenumi{\arabic{enumi}.}
+}
+
+\pagestyle{empty}	
+
+\begin{document}
+\title{基礎気象学講義 復習問題} % ここは毎回同じ
+\author{第3回} %authorの代わりに第何回かを入れる
+\date{大気熱力学・前半} %内容を記載する
+\maketitle
+
+\section{問題}
+
+    \begin{problems}
+    \item 次の文章を読んで、後の問いに答えなさい。
+        \begin{screen}
+          大気の熱力学を考える場合、その基礎を増減しやすい水蒸気を除いた(A)について置くことで議論していく。(A)の熱力学的な基本方程式は以下の3つである。
+          \begin{itemize}
+          \item (A)の状態方程式：気圧と密度・気温の関係を表した式。$_{(\mathrm{a})}$\underline{理想気体の状態方程式から導かれる。}
+          \item (B)：$_{(\mathrm{b})}$\underline{ある気柱の上部と下部が釣り合っていること}を示した、層構造に関する式。この関係が成り立つ場合は安定成層と言える。
+          \item (C)：熱の授受に関する法則。系外よりなされた仕事と系外になした仕事の差が内部エネルギーの増分になるというもの。
+          \end{itemize}
+          これに水蒸気を加えた(D)について議論する場合には、まず、その水蒸気の量を把握する必要がある。ある空気塊に含まれる水蒸気の量を表す指標には次のようなものがある。
+          \begin{itemize}
+          \item (E)：(A)の質量に対する水蒸気の質量の比率。通常g/kgという単位を用いる。
+          \item (F)：(D)の質量に対する水蒸気の質量の比率。通常g/kgという単位を用いる。絶対湿度と呼ぶこともある。
+          \item (G)：その温度の空気に含むことのできる$_{(\mathrm{c})}$\underline{水蒸気の上限となる蒸気圧(通常(H)と呼ばれる)}に対する、実際の蒸気圧の比率。
+          \end{itemize}
+          この空気塊の熱力学的過程は大きく以下の2つがあり、現実にはこの2つの間の過程となる。
+          \begin{itemize}
+          \item (I)：凝結した水は直ちにその空気塊から脱落するという過程。
+          \item (J)：凝結した水を保ったまま空気塊が運動するという過程。
+          \end{itemize}
+          これらの過程は雲の生成過程、降水現象などの理解に不可欠なものである。
+            \begin{flushright}
+            (オリジナル)
+            \end{flushright}
+        \end{screen}
+
+        \begin{enumerate}[(1)]
+        \item 文中の空欄(A)〜(J)に当てはまる語句や数値を答えなさい。
+        \item 下線部(a)について、理想気体の状態方程式から、(A)の状態方程式を導出しなさい。
+        \item 下線部(b)について、気柱の釣り合いから(B)を導出しなさい。
+        \item (A),(B)を用い、等温大気における気圧$p$の高度$z$を求めなさい。
+        \item 高度$z$で観測した気圧が$p$、気温が$T$であった。この時、この観測地点の$T$を海面補正した値を求めなさい。
+        \item 高層天気図で用いられる気圧面(指定気圧面)の代表的な気圧は、300hPa,500hPa,700hPa,850hPaである。これらの気圧面が概ねどの程度の高度に対応するか答えなさい。
+        \item 下線部(c)について、(H)を求めるには、通常どのような式を用いるか、2例程度、名前と式を挙げなさい。\\
+        \end{enumerate}
+
+    \item 高層の空気のエネルギーは、その運動を知る上で重要である。これを端的に表すのが温位(Potential Temperature)という物理量である。温位について以下の問いに答えなさい。
+        \begin{enumerate}[(1)]
+        \item 温位の定義を、式と日本語それぞれで記しなさい。
+        \item 乾燥断熱過程において温位が保存されることを示しなさい。
+        \item 水蒸気の効果も考えた温位として、相当温位と湿球温位、仮温位といった物理量が挙げられる。これらについて、その定義と保存条件を説明しなさい。\\
+        \end{enumerate}
+
+    \item 中学校の理科教育などで用いられる乾湿温度計には、乾球温度と湿球温度の差から水蒸気が求められるような表がついている。
+        \footnote{理科室の乾湿温度計は通風や遮光がなされておらず、設置場所の条件も満たされないため、いわゆる気象観測地点での観測とは条件が著しく異なる。
+                しかし、地上気象観測で用いられているものも、通風や遮光、データ送信などの違いはあれど、原理としては同じ乾湿温度計である。}
+        この表は、標準気圧下における表であるが、実際には気圧によって表の値は多少変わってくる。何通りかの気圧について、この表を作成しなさい。\\
+\end{problems}
+
+\section{答案}
+\begin{problems}
+% 以下に解答を作成してGit Push。
+\item 
+
+\item 
+
+\item 
+
+\end{problems}
+
+
+\end{document}
+
