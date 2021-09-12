@@ -1,0 +1,145 @@
+\documentclass{jsarticle}
+\oddsidemargin=-0.8cm
+\topmargin=-2cm
+\baselineskip=13pt
+\textheight=55\baselineskip
+\marginparsep=0.5in
+\marginparwidth=0.5in
+\textwidth=52zw
+\usepackage{ascmac}
+\usepackage{url}
+\usepackage[dvips]{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{bm}
+\usepackage{enumerate}
+\usepackage{listings}
+\usepackage{fancybox}
+\usepackage{framed}
+\usepackage{subfigure}
+\usepackage{ccaption}
+\usepackage{color}
+\makeatletter
+\lstset{% 
+language={C}, 
+frame=trbl,% 
+basicstyle={\small},% 
+identifierstyle={\small},% 
+commentstyle={\small\ttfamily},% 
+keywordstyle={\small\bfseries},% 
+ndkeywordstyle={\small},% 
+stringstyle={\small\ttfamily}, 
+tabsize=2,
+breaklines=true, 
+frame=none,
+columns=[l]{fullflexible},% 
+numbers=left,% 
+xrightmargin=0zw,% 
+xleftmargin=3zw,% 
+numberstyle={\scriptsize},% 
+stepnumber=1, 
+numbersep=1zw,% 
+backgroundcolor={\color[gray]{.90}},
+} 
+\makeatother
+
+\newenvironment{problems}
+{
+  \renewcommand\labelenumi{\doublebox{\arabic{enumi}}}
+  \begin{enumerate}
+}{
+  \end{enumerate}
+  \renewcommand\labelenumi{\arabic{enumi}.}
+}
+
+\pagestyle{empty}	
+
+\begin{document}
+\title{基礎気象学講義 復習問題} % ここは毎回同じ
+\author{第4回} %authorの代わりに第何回かを入れる
+\date{大気熱力学・後半：大気の安定度と熱力学図} %内容を記載する
+\maketitle
+
+\section{問題}
+
+    \begin{problems}
+    \item 次の文章を読んで、後の問いに答えなさい。%断熱減率と大気の安定性について記述する。
+        \begin{screen}
+          静力学平衡にある静止した大気中で、気塊が断熱的に鉛直方向に微小量変位した場合を考える。$_{(\mathrm{a})}$\underline{気塊は周囲の空気との重さの関係により、鉛直上下いずれかの向きの加速度を得る。}
+          これにより鉛直情報に持ち上げられた気塊が初期の高度に戻るとき、大気は(A)であるという。逆に、初期の位置から離れていってしまう場合には大気は(B)であるといい、持ち上げられた高度で正味の力を受けない場合、(C)であるという。
+          通常、この過程は断熱的に行われる。このとき、気塊の温度が高度に連れてどの様に変化するかを示した指標値を(D)という。
+          よく考えられる(D)としては、$_{(\mathrm{b})}$\underline{気塊内で水分の凝結が発生しない(E)と、凝結が発生する(F)が挙げられる。}
+
+          乾燥空気での(A),(B),(C)については、$_{(\mathrm{c})}$\underline{周囲の気層の気温減率と気塊の(E)の大小関係により与えられる。}
+          一方、湿潤空気については、一義的には仮温度を用いて同様の議論を行えば良い他、$_{(\mathrm{d})}$\underline{その飽和度に応じて(E)と(F)を使い分けることでも同様の関係を導ける。}
+          
+          ここまで述べた話では、空気の連続的な層構造を見てきたが、実際の観測では高度に対する気温が連続的にわかることは少ない。そこで、$_{(\mathrm{e})}$\underline{(A)度を示すために種々の指数が用いられる。}
+          その多くは、強制対流により飽和する高度である持ち上げ凝結高度(略称：(G))・気層と気塊の温度が一致する高度である自由対流高度(略称：(H))・浮力による断熱上昇で飽和する高度である対流凝結高度(略称:(I))
+          などを考慮して定めたものである。
+
+          他方、気層全体が対流や温度変化により(B)になる場合もある。ある厚さの未飽和気層を全体が飽和するまで持ち上げたときに、$_{(\mathrm{f})}$\underline{その気層が(B)化する場合を(J)または潜在(B)とよぶ。}
+          これらは生成される雲の状態、ひいては降水現象に直結するため、予報する場合にも重要な指標の一つである(例えば、天気予報などで「大気の状態が(B)なため、雨が降るでしょう」というのを聞いたことがあるだろう)。
+            \begin{flushright}
+            (講義テキストを基に作成)
+            \end{flushright}
+        \end{screen}
+
+        \begin{enumerate}[(1)]
+        \item 文中の空欄(A)〜(J)に当てはまる語句や数値を答えなさい。
+        \item 下線部(a)について、気塊の周囲の空気との重さの関係と、気塊が得る加速度の向きを一覧表にまとめなさい。
+        \item 下線部(b)について、(E)は(F)より大きいが、そのような大小関係となる理由を説明しなさい。
+        \item 下線部(c)について、周囲の気層の気温減率を$\gamma$、気塊の(E)を$\Gamma _d$として、その大小関係と(A),(B),(C)の関係を記しなさい。また、これを温位を用いて書き直しなさい(この部分は導出過程も示しなさい)。
+        \item 下線部(d)について、周囲の気層の気温減率を$\gamma$、気塊の(E)を$\Gamma _d$、気塊の(F)を$\Gamma _s$として、その大小関係と以下の気塊の状態のどれが対応するかを一覧に示しなさい。
+            \begin{itemize}
+            \item 絶対(A)：気塊の飽和状況によらず(A)である状態。
+            \item 湿潤(C)：気塊が飽和している場合は(C)であるが、飽和していない場合は(A)である状態。
+            \item 条件付き(B)：気塊が飽和している場合は(B)であるが、飽和していない場合は(A)である状態。
+            \item 乾燥(C)：気塊が飽和している場合は(B)であるが、飽和していない場合は(C)である状態。
+            \item 絶対(B)：気塊の飽和状況によらず(B)である状態。
+            \end{itemize}
+        \item 下線部(e)について、指数の名称と定義を3例程度挙げなさい。また、その特徴を述べなさい。
+        \item 下線部(f)について、気層の相当温位の符号と(J)の状態はどう対応するか記しなさい。\\
+        \end{enumerate}
+
+    \item エマグラムは国内でよく用いられる熱力学図で、気塊の状態を把握するのに役立つ。
+    エマグラム用紙を例えば \url{http://www.pilot-license.com/meteoimage/emagram.gif} などから取得し、次の問いに答えなさい。
+        \begin{enumerate}[(1)]
+        \item エマグラム上にある各線の意味を図上に記しなさい。
+        \item 気圧$p$、気温$T$、混合比$w$の空気塊について、ここまでに学習した大気熱力学的諸量を図上に記載しなさい。\\
+        \end{enumerate}
+
+    \item 教科書では、運動の定性的な説明の後気温減率を用いて大気の安定・不安定という概念を導入している。この運動について、より仔細に考察し、教科書の(3.32)式を導出してみよう。
+        以下、大気が静力学平衡の状態にあり、密度成層しているとする。この大気中の単位質量の空気塊が、周囲の空気（気圧）を乱すことなく、空気塊の圧力を周囲の気圧と等しく保ちながら、断熱的にわずかに鉛直運動する場合を考える。
+        \begin{enumerate}[(1)]
+        \item 単位質量あたりの鉛直方向の気圧変化による力(気圧傾度力)$F$は次の式で与えられる。
+        \begin{equation}
+            F=-\frac{1}{\rho}\frac{dp}{dz} \label{PressureGradient}
+        \end{equation}
+        大気中に微小な柱状の薄層をとり、この上面・下面にかかる力の差から、気圧傾度力が(\ref{PressureGradient})式の通り与えられることを示しなさい。但し、水平方向の気圧傾度は無いものとして構いません。
+        \item 大気中の空気塊には、重力と気圧傾度力が働く。この空気塊の鉛直方向の運動方程式を記しなさい。
+        \item 空気塊の周囲の大気の物理量を、全て$\overline{p}$のように物理量の上に線を引くことで示すこととする。この表記を用いて、周囲の大気に対する静力学平衡の式を記しなさい。
+        \item 周囲の大気に対する静力学平衡の式を用い、空気塊の鉛直方向の運動方程式から気圧項を消去した式を記しなさい。
+        \item 前問にて導出した式について、密度を用いず温位を用いて書きなさい。
+        \item 空気塊の上昇前の高度を原点とするとき、上昇後の高度$z$における周囲の大気の温位を1次近似(マクローリン展開して1次の項までで打ち切ったもの)により求めなさい。
+        \item 前々問で導出した温位による運動方程式について、空気塊の温位を消去し、周囲の大気の温位及びその高度微分を用いた式に書き直しなさい。
+        \item 前問の微分方程式を解きなさい。簡単のため、$z$の係数(この係数の平方根をブラント・ヴァイサラ振動数または浮力振動数と呼ぶ)は定数$N^2$として計算し、複素関数での解となって構いません。
+        \item 周囲の空気の温位の高度変化が正・負・0の各々の場合について、前問の解が実関数となるように書きくだしなさい。また、解をグラフで示し、安定・中立・不安定の条件に対応することを示しなさい。
+        \end{enumerate}
+
+\end{problems}
+
+\section{答案}
+\begin{problems}
+% 以下に解答を作成してGit Push。
+\item 
+
+\item 
+
+\item 
+
+\end{problems}
+
+
+\end{document}
+

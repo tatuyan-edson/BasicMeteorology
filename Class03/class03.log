@@ -1,8 +1,8 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2020.7.13)  29 AUG 2021 01:54
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2020.7.13)  12 SEP 2021 13:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**class03.tex
+**class03
 (./class03.tex
 pLaTeX2e <2020-02-02>+2 (based on LaTeX2e <2020-02-02> patch level 2)
 L3 programming layer <2020-02-14>
@@ -434,6 +434,6 @@ Here is how much of TeX's memory you used:
  19897 multiletter control sequences out of 15000+600000
  552306 words of font info for 113 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 30i,8n,51p,223b,334s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,8n,51p,219b,334s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on class03.dvi (2 pages, 8876 bytes).
+Output written on class03.dvi (2 pages, 8904 bytes).

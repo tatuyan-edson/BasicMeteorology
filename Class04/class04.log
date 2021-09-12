@@ -1,9 +1,9 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2020.7.13)  12 SEP 2021 13:24
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2020.7.13)  12 SEP 2021 13:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**class01
-(./class01.tex
+**class04
+(./class04.tex
 pLaTeX2e <2020-02-02>+2 (based on LaTeX2e <2020-02-02> patch level 2)
 L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/platex/jsclasses/jsarticle.cls
@@ -351,8 +351,8 @@ File: l3backend-dvips.def 2020-02-03 L3 backend support: dvips
 \g__pdf_backend_link_int=\count279
 \g__pdf_backend_link_sf_int=\count280
 )
-(./class01.aux)
-\openout1 = `class01.aux'.
+(./class04.aux)
+\openout1 = `class04.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
 LaTeX Font Info:    ... okay on input line 58.
@@ -409,29 +409,40 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 64.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 75.
+(Font)              scaled to size 6.72699pt on input line 69.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 75.
+(Font)              scaled to size 4.805pt on input line 69.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 75.
+(Font)              scaled to size 9.60999pt on input line 69.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 75.
+(Font)              scaled to size 6.72699pt on input line 69.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 4.805pt on input line 75.
- [1
+(Font)              scaled to size 4.805pt on input line 69.
+
+Overfull \hbox (10.9908pt too wide) in paragraph at lines 74--76
+[]\JY1/mc/m/n/10 乾燥空気での \OT1/cmr/m/n/10 (A),(B),(C) \JY1/mc/m/n/10 につい
+ては 、 $[]$[]$[]$[]
+ []
+
+
+Underfull \hbox (badness 1895) in paragraph at lines 74--76
+\JY1/mc/m/n/10 一方 、 湿潤空気については 、 一義的には仮温度を用いて同様の議論
+を行えば良い他 、
+ []
+
+[1
 
 ]
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 101.
- [2]
-(./class01.aux) ) 
+(Font)              scaled to size 9.60999pt on input line 106.
+ [2] (./class04.aux) ) 
 Here is how much of TeX's memory you used:
- 4552 strings out of 481768
- 60081 string characters out of 5933620
- 505451 words of memory out of 5000000
- 19897 multiletter control sequences out of 15000+600000
+ 4553 strings out of 481768
+ 60099 string characters out of 5933620
+ 506451 words of memory out of 5000000
+ 19898 multiletter control sequences out of 15000+600000
  552285 words of font info for 113 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 30i,7n,51p,222b,305s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,7n,51p,235b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on class01.dvi (2 pages, 9164 bytes).
+Output written on class04.dvi (2 pages, 13460 bytes).
