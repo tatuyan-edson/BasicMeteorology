@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2020.7.13)  12 SEP 2021 13:26
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2020.7.13)  12 SEP 2021 13:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -418,24 +418,13 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 6.72699pt on input line 69.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 4.805pt on input line 69.
-
-Overfull \hbox (10.9908pt too wide) in paragraph at lines 74--76
-[]\JY1/mc/m/n/10 乾燥空気での \OT1/cmr/m/n/10 (A),(B),(C) \JY1/mc/m/n/10 につい
-ては 、 $[]$[]$[]$[]
- []
-
-
-Underfull \hbox (badness 1895) in paragraph at lines 74--76
-\JY1/mc/m/n/10 一方 、 湿潤空気については 、 一義的には仮温度を用いて同様の議論
-を行えば良い他 、
- []
-
-[1
+ [1
 
 ]
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 106.
- [2] (./class04.aux) ) 
+ [2]
+(./class04.aux) ) 
 Here is how much of TeX's memory you used:
  4553 strings out of 481768
  60099 string characters out of 5933620
@@ -445,4 +434,4 @@ Here is how much of TeX's memory you used:
  934 hyphenation exceptions out of 8191
  30i,7n,51p,235b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on class04.dvi (2 pages, 13460 bytes).
+Output written on class04.dvi (2 pages, 13476 bytes).
