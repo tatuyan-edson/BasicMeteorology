@@ -1,8 +1,8 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2020.7.13)  27 AUG 2021 19:40
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2020.7.13)  14 SEP 2021 23:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**class02.tex
+**class02
 (./class02.tex
 pLaTeX2e <2020-02-02>+2 (based on LaTeX2e <2020-02-02> patch level 2)
 L3 programming layer <2020-02-14>
@@ -426,12 +426,12 @@ File: AbsorbLat.eps Graphic file (type eps)
 File: Sahara.eps Graphic file (type eps)
  <Sahara.eps> [2] [3] (./class02.aux) ) 
 Here is how much of TeX's memory you used:
- 4560 strings out of 481768
- 60192 string characters out of 5933620
+ 4563 strings out of 481768
+ 60228 string characters out of 5933620
  504451 words of memory out of 5000000
- 19904 multiletter control sequences out of 15000+600000
- 551593 words of font info for 110 fonts, out of 8000000 for 9000
+ 19906 multiletter control sequences out of 15000+600000
+ 551928 words of font info for 111 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 30i,7n,51p,226b,462s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,7n,51p,222b,462s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on class02.dvi (3 pages, 9760 bytes).
+Output written on class02.dvi (3 pages, 11064 bytes).
