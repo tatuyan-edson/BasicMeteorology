@@ -1,0 +1,106 @@
+\documentclass{jsarticle}
+\oddsidemargin=-0.8cm
+\topmargin=-2cm
+\baselineskip=13pt
+\textheight=55\baselineskip
+\marginparsep=0.5in
+\marginparwidth=0.5in
+\textwidth=52zw
+\usepackage{ascmac}
+\usepackage{url}
+\usepackage[dvips]{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{bm}
+\usepackage{enumerate}
+\usepackage{listings}
+\usepackage{fancybox}
+\usepackage{framed}
+\usepackage{subfigure}
+\usepackage{ccaption}
+\usepackage{color}
+\makeatletter
+\lstset{% 
+language={C}, 
+frame=trbl,% 
+basicstyle={\small},% 
+identifierstyle={\small},% 
+commentstyle={\small\ttfamily},% 
+keywordstyle={\small\bfseries},% 
+ndkeywordstyle={\small},% 
+stringstyle={\small\ttfamily}, 
+tabsize=2,
+breaklines=true, 
+frame=none,
+columns=[l]{fullflexible},% 
+numbers=left,% 
+xrightmargin=0zw,% 
+xleftmargin=3zw,% 
+numberstyle={\scriptsize},% 
+stepnumber=1, 
+numbersep=1zw,% 
+backgroundcolor={\color[gray]{.90}},
+} 
+\makeatother
+
+\newenvironment{problems}
+{
+  \renewcommand\labelenumi{\doublebox{\arabic{enumi}}}
+  \begin{enumerate}
+}{
+  \end{enumerate}
+  \renewcommand\labelenumi{\arabic{enumi}.}
+}
+
+\pagestyle{empty}	
+
+\begin{document}
+\title{基礎気象学講義 復習問題} % ここは毎回同じ
+\author{第6回} %authorの代わりに第何回かを入れる
+\date{雲と降水の分類} %内容を記載する
+\maketitle
+
+\section{問題}
+
+    \begin{problems}
+    \item 次の問いに答えなさい。
+        \begin{enumerate}[(1)]
+        \item 雲は大きく10種類に分かれる(十種雲形)。これらを出る層がわかるように一覧に並べ、和名・英名・記号をまとめた表を作成しなさい。
+        \item 気象観測の手引き(\url{https://www.jma.go.jp/jma/kishou/know/kansoku_guide/tebiki.pdf})に従い、次の降水現象を説明しなさい。
+        \begin{itemize}
+            \item 霧雨
+            \item 着氷性・過冷却の霧雨
+            \item 雨
+            \item 着氷性・過冷却の雨
+            \item 雪
+            \item みぞれ
+            \item 雪あられ
+            \item 霧雪
+            \item 凍雨
+            \item 氷あられ
+            \item ひょう
+            \item 細氷\\
+        \end{itemize}
+        \end{enumerate}
+
+    \item 昼間に空を観測し、全雲量・各層の雲の型・出ている雲形とその雲量・天気を記録しなさい。これを6時間以上あけて3度以上行うと共に、その時の空の写真を貼り付けなさい。\\
+
+    \item International Cloud Atlas(国際雲図帳、\url{https://cloudatlas.wmo.int/en/home.html})のサイトには、WMO(世界気象機関)の提供する様々な雲に関する知見がまとめられている。
+        当該サイトのImagesから適当な雲の写真を3点選び、その解説を和訳しなさい。
+
+\end{problems}
+
+\section{答案}
+\begin{problems}
+% 以下に解答を作成してGit Push。
+\item 
+
+\item 
+
+\item 
+
+\end{problems}
+
+\end{document}
+
