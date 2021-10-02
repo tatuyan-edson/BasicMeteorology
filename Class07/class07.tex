@@ -1,0 +1,117 @@
+\documentclass{jsarticle}
+\oddsidemargin=-0.8cm
+\topmargin=-2cm
+\baselineskip=13pt
+\textheight=55\baselineskip
+\marginparsep=0.5in
+\marginparwidth=0.5in
+\textwidth=52zw
+\usepackage{ascmac}
+\usepackage{url}
+\usepackage[dvips]{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{bm}
+\usepackage{enumerate}
+\usepackage{listings}
+\usepackage{fancybox}
+\usepackage{framed}
+\usepackage{subfigure}
+\usepackage{ccaption}
+\usepackage{color}
+\makeatletter
+\lstset{% 
+language={C}, 
+frame=trbl,% 
+basicstyle={\small},% 
+identifierstyle={\small},% 
+commentstyle={\small\ttfamily},% 
+keywordstyle={\small\bfseries},% 
+ndkeywordstyle={\small},% 
+stringstyle={\small\ttfamily}, 
+tabsize=2,
+breaklines=true, 
+frame=none,
+columns=[l]{fullflexible},% 
+numbers=left,% 
+xrightmargin=0zw,% 
+xleftmargin=3zw,% 
+numberstyle={\scriptsize},% 
+stepnumber=1, 
+numbersep=1zw,% 
+backgroundcolor={\color[gray]{.90}},
+} 
+\makeatother
+
+\newenvironment{problems}
+{
+  \renewcommand\labelenumi{\doublebox{\arabic{enumi}}}
+  \begin{enumerate}
+}{
+  \end{enumerate}
+  \renewcommand\labelenumi{\arabic{enumi}.}
+}
+
+\pagestyle{empty}	
+
+\begin{document}
+\title{基礎気象学講義 復習問題} % ここは毎回同じ
+\author{第7回} %authorの代わりに第何回かを入れる
+\date{気象力学 前編：プリミティブ方程式系} %内容を記載する
+\maketitle
+
+\section{問題}
+
+    \begin{problems}
+    \item 気象力学におけるプリミティブ方程式系とは、通常次の5つの方程式をさす。
+        \begin{itemize}
+        \item 球面座標系における運動方程式(3成分を別と数える場合、プリミティブ方程式系は7つの方程式からなる)
+        \item 熱力学の第一法則
+        \item 気体の状態方程式
+        \item 連続方程式(質量保存則)
+        \item 静水圧平衡の式や浅水方程式など、層構造あるいは水蒸気輸送に関する方程式
+        \end{itemize}
+        これらについて、その式・式全体及び各項の意味・出てくる変数とその表す物理量の一覧を書き下しなさい。但し、「層構造あるいは水蒸気輸送に関する方程式」については、静水圧平衡の式を採用して記しなさい。\\
+
+    \item 教科書の以下の式をプリミティブ方程式から導出しなさい。
+        \begin{enumerate}[(1)]
+        \item (5.23)式
+        \item (5.28)及び(5.29)式
+        \item (5.30)式
+        \item (5.31)式\\
+        \end{enumerate}
+
+    \item 気象力学は式いじりが非常に多く、理論の権化であるという印象を抱いたかもしれない。そこで、本問では具体例について考察することで、実際の現象に目を向けてみよう。複雑な計算は電卓などを用いて良い。
+
+        以下の問題では、大気の気体定数は${R = 287}$J K$^{-1}$ kg$^{-1}$とする。(本問は、筆者が受けた気象力学の授業の問題の引用である)
+        \begin{enumerate}[(1)]
+        \item 北緯35度の地点にある大砲から砲弾を${20}$km先の目標に目がけて${1000}$m/sの速度で発射した。
+            砲弾はコリオリ力の影響でどれだけ目標からずれるか計算しなさい。なお、地球の自転角速度は
+            ${\Omega = 7.292 \times 10^{-5}}$s$^{-1}$で、砲弾は空気抵抗で減速したり、重力によって途中で着地しないとする。
+        \item 赤道上にある高さ${5000}$mの台の上から物体を落下させたとき、空気抵抗を無視すると、物体が地上に落下した地点は、放出した地点からどの方向にどれだけずれているか。
+        \item 一定の角速度で回転している竜巻を考える。竜巻の中心から${100}$mの距離での風速は${100}$m/sで、
+            気圧は${1000}$hPaである。この地点より竜巻の中心までの範囲で、風は完全に同心円状に吹いており、気圧と風速の間には
+            旋衡風の関係が成り立っているとする。さらに、この範囲では気温は一定で${288}$Kだとした場合、竜巻の中心および
+            中心から半径${50}$mの地点の気圧を求めなさい。
+        \item コリオリパラメータが${1.0 \times 10^{-4}}$ s$^{-1}$の地点で${850}$hPa面での地衡風は風速${10}$m/sの
+            北風だった。またこの地点上空の${850}$hPaから${700}$hPaの間の平均気温は南東向きに${100}$kmあたり${3}$K
+            上昇する勾配が、${700}$hPaから${500}$hPaの間の平均気温は南向きに同じ大きさの勾配が見られた。以上のデータから
+            この地点上空${700}$hPaおよび${500}$hPaでの地衡風の風速と風向（真北から時計回りに測った角度：単位は度）を求めなさい。
+        \end{enumerate}
+
+\end{problems}
+
+\section{答案}
+\begin{problems}
+% 以下に解答を作成してGit Push。
+\item 
+
+\item 
+
+\item 
+
+\end{problems}
+
+\end{document}
+
