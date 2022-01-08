@@ -1,0 +1,101 @@
+\documentclass{jsarticle}
+\oddsidemargin=-0.8cm
+\topmargin=-2cm
+\baselineskip=13pt
+\textheight=55\baselineskip
+\marginparsep=0.5in
+\marginparwidth=0.5in
+\textwidth=52zw
+\usepackage{ascmac}
+\usepackage{url}
+\usepackage[dvips]{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{bm}
+\usepackage{enumerate}
+\usepackage{listings}
+\usepackage{fancybox}
+\usepackage{framed}
+\usepackage{subfigure}
+\usepackage{ccaption}
+\usepackage{color}
+\makeatletter
+\lstset{% 
+language={C}, 
+frame=trbl,% 
+basicstyle={\small},% 
+identifierstyle={\small},% 
+commentstyle={\small\ttfamily},% 
+keywordstyle={\small\bfseries},% 
+ndkeywordstyle={\small},% 
+stringstyle={\small\ttfamily}, 
+tabsize=2,
+breaklines=true, 
+frame=none,
+columns=[l]{fullflexible},% 
+numbers=left,% 
+xrightmargin=0zw,% 
+xleftmargin=3zw,% 
+numberstyle={\scriptsize},% 
+stepnumber=1, 
+numbersep=1zw,% 
+backgroundcolor={\color[gray]{.90}},
+} 
+\makeatother
+
+\newenvironment{problems}
+{
+  \renewcommand\labelenumi{\doublebox{\arabic{enumi}}}
+  \begin{enumerate}
+}{
+  \end{enumerate}
+  \renewcommand\labelenumi{\arabic{enumi}.}
+}
+
+\pagestyle{empty}	
+
+\begin{document}
+\title{基礎気象学講義 復習問題} % ここは毎回同じ
+\author{第8回} %authorの代わりに第何回かを入れる
+\date{気象力学 後編：気象力学的諸物理量} %内容を記載する
+\maketitle
+
+\section{問題}
+
+    \begin{problems}
+    \item 魔法瓶に水を入れて密閉し、十分に振ると温度が上がることが知られている。これをエネルギー保存則の観点から説明しなさい。\\
+
+    \item 気象庁数値予報天気図(\url{https://www.jma.go.jp/bosai/numericmap/#type=nwp})の日本850hPa相当温位・風予想図(FXJP854)を解析してみよう。
+          ただし、この図の風は矢羽根の形で示されている点に留意すること。
+        \begin{enumerate}[(1)]
+        \item 風の流線を引き、その収束域・発散域・水平シアーをマークしなさい。
+        \item この図に引かれている等値線は相当温位を示している。相当温位の傾度が大きい箇所をマークしなさい。
+        \item マークした周辺の天気予報を確認しなさい。なお、時刻は各図の右下キャプションのVALIDの後ろに記載してある。
+        (231200UTCなら、日本時間23日21時：世界標準時での記載であるため、日本時間になおすには9時間足す必要がある。)\\
+        \end{enumerate}
+
+
+    \item 気象庁高層天気図(\url{https://www.jma.go.jp/bosai/numericmap/#type=upper})のうち700hPa上昇流／500hPa高度・渦度天気図(AXFE578)と、地上天気図(\url{https://www.data.jma.go.jp/fcd/yoho/wxchart/quickmonthly.html})から、渦と擾乱の関係を考えてみよう。
+        \begin{enumerate}[(1)]
+        \item AXFE578の上側の図の影付き領域は正渦域を示しており、各所にある数値と符号はその点が渦度の極値を取ることを示している。
+        また、その周辺の破線は等渦度線である。日本付近の正渦の極値のうち、特に大きなものいくつかと同じ等渦度線領域にあるものをマークしなさい。
+        \item 前問と同様の要領で、負渦域をマークしなさい。
+        \item 地上天気図(速報図でもアジア太平洋域の詳しいものでも良い)を見て、正渦域・負渦域が擾乱(高気圧・低気圧・前線)とどのように対応しているか考察しなさい。また、その際の天気の傾向についても調べてみなさい。
+        \end{enumerate}
+
+\end{problems}
+
+\section{答案}
+\begin{problems}
+% 以下に解答を作成してGit Push。
+\item 
+
+\item 
+
+\item 
+
+\end{problems}
+
+\end{document}
+
