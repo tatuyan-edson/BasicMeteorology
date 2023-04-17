@@ -1,0 +1,93 @@
+\documentclass{jsarticle}
+\oddsidemargin=-0.8cm
+\topmargin=-2cm
+\baselineskip=13pt
+\textheight=55\baselineskip
+\marginparsep=0.5in
+\marginparwidth=0.5in
+\textwidth=52zw
+\usepackage{ascmac}
+\usepackage{url}
+\usepackage[dvips]{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{bm}
+\usepackage{enumerate}
+\usepackage{listings}
+\usepackage{fancybox}
+\usepackage{framed}
+\usepackage{subfigure}
+\usepackage{ccaption}
+\usepackage{color}
+\makeatletter
+\lstset{% 
+language={C}, 
+frame=trbl,% 
+basicstyle={\small},% 
+identifierstyle={\small},% 
+commentstyle={\small\ttfamily},% 
+keywordstyle={\small\bfseries},% 
+ndkeywordstyle={\small},% 
+stringstyle={\small\ttfamily}, 
+tabsize=2,
+breaklines=true, 
+frame=none,
+columns=[l]{fullflexible},% 
+numbers=left,% 
+xrightmargin=0zw,% 
+xleftmargin=3zw,% 
+numberstyle={\scriptsize},% 
+stepnumber=1, 
+numbersep=1zw,% 
+backgroundcolor={\color[gray]{.90}},
+} 
+\makeatother
+
+\newenvironment{problems}
+{
+  \renewcommand\labelenumi{\doublebox{\arabic{enumi}}}
+  \begin{enumerate}
+}{
+  \end{enumerate}
+  \renewcommand\labelenumi{\arabic{enumi}.}
+}
+
+\pagestyle{empty}	
+
+\begin{document}
+\title{基礎気象学講義 復習問題} % ここは毎回同じ
+\author{第10回} %authorの代わりに第何回かを入れる
+\date{境界層気象学} %内容を記載する
+\maketitle
+
+\section{問題}
+
+    \begin{problems}
+    \item 教科書6.4節を参考に、乱流は水平及び鉛直方向の各熱輸送にどのような影響を与えるか述べなさい。\\
+
+    \item 教科書6.3節を参考に、エクマン層におけるホドグラフを数値的に計算し、描画しなさい。
+
+\end{problems}
+
+\section{答案}
+\begin{problems}
+% 以下に解答を作成してGit Push。
+\item 
+
+\item 
+
+
+\end{problems}
+
+\section{読書案内}
+境界層気象学に関する書籍は近年あまり見かけない。以下は、古典的名著と呼ばれるものを中心に紹介する。
+\begin{itemize}
+\item 近藤純正氏の一連の著作全般 \url{http://www.asahi-net.or.jp/~rk7j-kndu/profile/pro01.html}
+\item J.C.カイマル 1993 "微細気象学" 技報堂出版
+\item R.B.Stull 1988 "An Introduction to Boundary Layer Meteorology" Springer
+\item T.R.Oke 1987 "Boundary Layer Climates" Routledge
+\end{itemize}
+
+\end{document}
+

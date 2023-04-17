@@ -1,9 +1,9 @@
-This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2022.8.8)  17 APR 2023 18:34
+This is e-pTeX, Version 3.141592653-p3.9.1-210218-2.6 (utf8.euc) (TeX Live 2022/dev/Debian) (preloaded format=platex 2022.8.8)  17 APR 2023 18:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**class08
-(./class08.tex
+**class10
+(./class10.tex
 pLaTeX2e <2021-11-15> (based on LaTeX2e <2021-11-15> patch level 1)
 L3 programming layer <2022-01-21>
 (/usr/share/texlive/texmf-dist/tex/platex/jsclasses/jsarticle.cls
@@ -352,8 +352,8 @@ File: l3backend-dvips.def 2022-01-12 L3 backend support: dvips
 \g__pdf_backend_link_int=\count297
 \g__pdf_backend_link_sf_int=\count298
 )
-(./class08.aux)
-\openout1 = `class08.aux'.
+(./class10.aux)
+\openout1 = `class10.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
 LaTeX Font Info:    ... okay on input line 58.
@@ -410,28 +410,27 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 64.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 69.
+(Font)              scaled to size 9.60999pt on input line 86.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 69.
+(Font)              scaled to size 9.60999pt on input line 86.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 69.
+(Font)              scaled to size 6.72699pt on input line 86.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 69.
+(Font)              scaled to size 4.805pt on input line 86.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 69.
+(Font)              scaled to size 6.72699pt on input line 86.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 4.805pt on input line 69.
+(Font)              scaled to size 4.805pt on input line 86.
  [1
 
-] [2]
-(./class08.aux) ) 
+] (./class10.aux) ) 
 Here is how much of TeX's memory you used:
  4982 strings out of 478741
  73260 string characters out of 5860983
- 577257 words of memory out of 5000000
+ 570257 words of memory out of 5000000
  23331 multiletter control sequences out of 15000+600000
  489206 words of font info for 117 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 55i,7n,62p,292b,360s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,7n,62p,219b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on class08.dvi (2 pages, 6108 bytes).
+Output written on class10.dvi (1 page, 2740 bytes).
