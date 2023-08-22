@@ -1,0 +1,110 @@
+\documentclass{jsarticle}
+\oddsidemargin=-0.8cm
+\topmargin=-2cm
+\baselineskip=13pt
+\textheight=55\baselineskip
+\marginparsep=0.5in
+\marginparwidth=0.5in
+\textwidth=52zw
+\usepackage{ascmac}
+\usepackage{url}
+\usepackage[dvips]{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{bm}
+\usepackage{enumerate}
+\usepackage{listings}
+\usepackage{fancybox}
+\usepackage{framed}
+\usepackage{subfigure}
+\usepackage{ccaption}
+\usepackage{color}
+\makeatletter
+\lstset{% 
+language={C}, 
+frame=trbl,% 
+basicstyle={\small},% 
+identifierstyle={\small},% 
+commentstyle={\small\ttfamily},% 
+keywordstyle={\small\bfseries},% 
+ndkeywordstyle={\small},% 
+stringstyle={\small\ttfamily}, 
+tabsize=2,
+breaklines=true, 
+frame=none,
+columns=[l]{fullflexible},% 
+numbers=left,% 
+xrightmargin=0zw,% 
+xleftmargin=3zw,% 
+numberstyle={\scriptsize},% 
+stepnumber=1, 
+numbersep=1zw,% 
+backgroundcolor={\color[gray]{.90}},
+} 
+\makeatother
+
+\newenvironment{problems}
+{
+  \renewcommand\labelenumi{\doublebox{\arabic{enumi}}}
+  \begin{enumerate}
+}{
+  \end{enumerate}
+  \renewcommand\labelenumi{\arabic{enumi}.}
+}
+
+\pagestyle{empty}	
+
+\begin{document}
+\title{基礎気象学講義 復習問題} % ここは毎回同じ
+\author{第11回} %authorの代わりに第何回かを入れる
+\date{メソ気象学} %内容を記載する
+\maketitle
+
+\section{問題}
+
+    \begin{problems}
+    \item 夏を中心とした暑い日の夕方、対流雲が立ち上がり、雷雨となることがある。いわゆる「夕立」である。これについて、次の問いに答えなさい。
+        \begin{enumerate}[(1)]
+        \item 晴れた夏の日が夕立に至るまでの成因を述べなさい。
+        \item 夕立が起きやすいと考えられる気象的・地形的条件を3つ程度挙げなさい。
+        \item 日本国内において、具体的にどの地域で夕立が起きやすいのか、何箇所か例を挙げなさい。また、そのうちの1例について、実際に夕立が起きていることが見いだせるように観測データを示しなさい。
+        \item 気象的条件から夕立を予測する場合、どのような点に着目すればよいか、先の気象的条件をもとに述べなさい。
+        \item これら対流雲による気象災害は、気象庁の発表するどのような情報により注意喚起されるか、情報の名称を2例程度挙げなさい。
+        \item 対流雲による気象災害から自身の身を守るためにどのように行動すればよいか、まとめなさい。\\
+        \end{enumerate}
+
+    \item 海陸風(湖陸風などでも良い)や山谷風が見られると考えられるアメダス観測点を1点選んで、これを観察してみましょう。
+        \begin{enumerate}[(1)]
+        \item その周辺の地形図を示し、理論通りに吹くならば風がどのように変化するか説明しなさい。
+        \item 当該地点の適当なデータを選択し、にホドグラフをプロットしなさい。ただし、ホドグラフは時間変化がわかるようにプロットしなさい。
+        \item 時間軸を横軸、風向を縦軸にとって、風向の時間変化を示したグラフを作成しなさい。但し、風向は海陸風等の動径方向と垂直な角度に0度をとり、動径方向が正負になるよう、絶対値が180度以下の範囲で表すこと。
+        \item 上記をもとに、観測地点の風の日変化について考察しなさい。
+        \item 風の日変化は日照時間にどのように影響されているか調べなさい。特に、季節変化に留意しなさい。
+        \item 風の日変化は温度など他の気象要素にどのように影響するか調べなさい。\\
+        \end{enumerate}
+
+    \item CM=5のAcは山岳波の可視化として知られている。これが山岳波によってどのように生まれ、どのように可視化しているのかを、図及び写真を用いて説明しなさい。
+    \end{problems}
+
+\section{答案}
+\begin{problems}
+% 以下に解答を作成してGit Push。
+\item 
+
+\item 
+
+
+\end{problems}
+
+\section{読書案内}
+この分野は奉書が十分にあるので、奉書のみを挙げる。
+\begin{itemize}
+\item 小倉義光 1997 "メソ気象の基礎理論" 東京大学出版会
+\item 吉崎正憲,加藤輝之 2007 "豪雨・豪雪の気象学" 朝倉書店
+\item 斉藤和雄,鈴木修 2016 "メソ気象の監視と予測" 朝倉書店
+\item 加藤輝之 2022 "集中豪雨と線状降水帯" 朝倉書店
+\item 加藤輝之 2017 "図解説 中小規模気象学" 気象庁 (\url{https://www.jma.go.jp/jma/kishou/know/expert/pdf/textbook_meso_v2.1.pdf})
+\end{itemize}
+
+\end{document}
